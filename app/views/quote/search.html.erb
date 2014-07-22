@@ -1,0 +1,5 @@
+<h1> Seach found <%= @search.count %> matches </h1><br><br>
+
+<% @search.each do |quote| %>
+  <%= highlight quote.body, params[:body] %><br><br>
+<% end %>
